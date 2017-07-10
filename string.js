@@ -146,6 +146,9 @@
             return str && str === str.toLowerCase();
         };
         this.isURL = function(str, type) {
+            if (typeof str !== "string") {
+                return false;
+            }
             switch(type) {
                 case "public":
                     return str && RE_URL_PUBLIC.test(str);
