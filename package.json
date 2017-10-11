@@ -1,14 +1,16 @@
 {
   "name": "cc.string",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "title": "String Processing And Validation Module",
   "description": "Library for processing and validating strings.",
   "license": "Apache-2.0",
-  "main": "string.js",
-  "pkxDependencies": [
-    {
-      "package": "cc.validate.0.1",
-      "optional": true
-    }
-  ]
+  "pkx" : {
+    "main": "string.js",
+    "dependencies": [
+      {
+        "package": "cc.validate.0.2",
+        "optional": true
+      }
+    ]
+  }
 }
